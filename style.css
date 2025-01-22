@@ -1,0 +1,75 @@
+.container {
+    font-family: sans-serif;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.password-setup, .practice-area {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box; /* to include padding and border in the element's total width and height */
+}
+
+button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #5cb85c;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+#feedback {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.password-display {
+    margin-bottom: 10px;
+}
+
+.password-display #revealedPassword {
+    font-family: monospace; /* Optional: Use monospace font for passwords */
+    padding: 5px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    display: block; /* Ensure it's on a new line if needed */
+    margin-top: 5px;
+}
+
+.stats {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+}
+
+.stats p {
+    margin: 5px 0;
+}
+
+/* Error state for input */
+input[type="password"].error {
+    border-color: red;
+    background-color: #ffe0e0; /* Optional: light red background */
+}

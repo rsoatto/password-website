@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Password Practice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Password Practice</h1>
+
+        <div class="password-setup">
+            <label for="setPassword">Enter Password to Practice:</label>
+            <input type="text" id="setPassword" placeholder="Your password">
+            <button id="setPasswordButton">Set Password</button>
+        </div>
+
+        <div class="practice-area" style="display: none;">
+            <p>Type the password below:</p>
+            <div class="password-display">
+                <span id="maskedPassword"></span>
+                <label>
+                    <input type="checkbox" id="showPasswordCheckbox"> Show Password
+                </label>
+            </div>
+            <input type="password" id="practicePassword" placeholder="Type here">
+            <label>
+                <input type="checkbox" id="showTypingCheckbox"> Show Typed Characters
+            </label>
+            <p id="feedback"></p>
+            <div class="stats">
+                <p>Successes: <span id="successCount">0</span></p>
+                <p>Time: <span id="timerDisplay">0.00</span> seconds</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
